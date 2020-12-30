@@ -15,7 +15,7 @@
             android:layout_height="64dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
-            android:tint="?attr/iconColor"
+            android:tint="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_logo" />
@@ -29,21 +29,6 @@
             app:src="@drawable/ic_email_black_24dp"
             app:description="@string/support_email"
             app:title="@string/about_email_title" />
-
-        <com.chooloo.www.callmanager.ui.widgets.ListItem
-            android:id="@+id/about_roei"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/about_email"
-            app:src="@drawable/ic_person_black_24dp"
-            app:title="@string/about_roei_title" />
-
-        <com.chooloo.www.callmanager.ui.widgets.ListItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/about_roei"
-            app:src="@drawable/ic_person_black_24dp"
-            app:title="@string/about_ido_title" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

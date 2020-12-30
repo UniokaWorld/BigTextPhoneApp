@@ -8,10 +8,19 @@
     app:elevation="0dp">
 
     <!-- Tool bar -->
+
+    <!-- Search bar container -->
+
+    <FrameLayout
+        android:id="@+id/search_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/action_bar_size"
+        android:layout_height="match_parent"
         app:layout_scrollFlags="scroll|snap"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
@@ -24,10 +33,10 @@
             app:stl_clickable="true"
             app:stl_defaultTabBackground="@drawable/bubble_background"
             app:stl_defaultTabTextAllCaps="true"
-            app:stl_defaultTabTextColor="@drawable/tab_color_selector"
+            app:stl_defaultTabTextColor="@color/color_accent_pink"
             app:stl_defaultTabTextHorizontalPadding="16dp"
             app:stl_defaultTabTextMinWidth="0dp"
-            app:stl_defaultTabTextSize="12sp"
+            app:stl_defaultTabTextSize="40sp"
             app:stl_distributeEvenly="true"
             app:stl_dividerColor="#4D000000"
             app:stl_dividerThickness="0dp"
@@ -48,12 +57,5 @@
             app:stl_underlineThickness="0dp" />
 
     </androidx.appcompat.widget.Toolbar>
-
-    <!-- Search bar container -->
-    <FrameLayout
-        android:id="@+id/search_bar_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone" />
 
 </com.google.android.material.appbar.AppBarLayout>

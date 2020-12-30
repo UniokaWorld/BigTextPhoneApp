@@ -14,7 +14,7 @@
             android:id="@+id/header_icon"
             android:layout_width="64dp"
             android:layout_height="64dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -24,7 +24,7 @@
             android:id="@+id/header_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="8dp"
             android:text="@string/app_name"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
             android:textColor="?android:textColorPrimary"
@@ -48,13 +48,14 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/about_version"
             app:src="@drawable/ic_history_black_24dp"
-            app:title="@string/about_changelog_title" />
+            app:title="@string/about_changelog_title"
+            tools:layout_editor_absoluteX="0dp" />
 
         <com.chooloo.www.callmanager.ui.widgets.ListItem
             android:id="@+id/about_source"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/about_changelog"
+            app:layout_constraintTop_toBottomOf="@id/about_changelog"
             app:src="@drawable/ic_github_circle_24dp"
             app:title="@string/about_source_title" />
 
