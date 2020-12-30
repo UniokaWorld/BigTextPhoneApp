@@ -20,7 +20,7 @@
     <!-- Number Input Field -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/phone_number_input_height"
+        android:layout_height="70dp"
         android:background="?attr/colorPrimary"
         android:orientation="horizontal"
         android:paddingStart="@dimen/top_dialpad_side_padding"
@@ -54,8 +54,9 @@
             android:singleLine="true"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
-            android:textColor="?attr/colorAccent"
-            android:textSize="20sp" />
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:textStyle="bold" />
 
         <!-- Delete Button -->
         <ImageView

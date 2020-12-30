@@ -5,16 +5,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/DialpadKey">
 
-    <LinearLayout style="@style/DialpadKeyInnerLayout">
+    <LinearLayout
+        style="@style/DialpadKeyInnerLayout"
+        android:background="#FFFFFF">
 
         <TextView
             android:id="@+id/dialpad_key_number"
             style="@style/DialpadKeyNumber"
+            android:layout_height="wrap_content"
+            android:accessibilityLiveRegion="none"
+            android:fontFamily="@font/google_sans_bold"
+            android:textSize="50sp"
+            android:textStyle="bold"
             tools:text="n" />
 
         <TextView
             android:id="@+id/dialpad_key_letters"
             style="@style/DialpadKeyLetters"
+            android:textStyle="bold"
             tools:text="number" />
 
     </LinearLayout>
