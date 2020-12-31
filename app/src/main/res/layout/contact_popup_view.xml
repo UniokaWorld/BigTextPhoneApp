@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/contact_popup_layout"
-    android:layout_width="280dp"
-    android:layout_height="wrap_content"
+    android:layout_width="350dp"
+    android:layout_height="310dp"
     android:background="@drawable/dialer_background"
     android:orientation="vertical"
     android:padding="15dp">
@@ -24,7 +24,6 @@
         android:id="@+id/caller_image_layout"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginTop="20dp"
         android:focusableInTouchMode="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,13 +54,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="10dp"
         android:ellipsize="end"
         android:gravity="center"
         android:maxLines="1"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textSize="50sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/caller_image_layout"
         tools:text="Jesus" />
@@ -70,12 +72,12 @@
         android:id="@+id/contact_popup_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
         android:gravity="center"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/contact_popup_name"
+        app:layout_constraintTop_toBottomOf="@+id/contact_popup_name"
         tools:text="+972 999 888 7777" />
 
     <TextView
@@ -94,18 +96,18 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:layout_marginBottom="10dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/contact_popup_date">
+        app:layout_constraintTop_toBottomOf="@+id/contact_popup_date">
 
         <!-- Call Button -->
         <ImageButton
             android:id="@+id/contact_popup_button_call"
             style="@style/ContactPopup.Button"
+            android:layout_height="match_parent"
             android:src="@drawable/ic_call_black_24dp"
             android:tint="@color/green_phone" />
 
@@ -117,13 +119,14 @@
             android:tint="@color/circle_success" />
 
         <!-- Edit Button -->
+
+        <!-- Add Button -->
         <ImageButton
             android:id="@+id/contact_popup_button_edit"
             style="@style/ContactPopup.Button"
             android:src="@drawable/ic_edit_black_24dp"
             android:tint="@color/color_accent_pink" />
 
-        <!-- Add Button -->
         <ImageButton
             android:id="@+id/contact_popup_button_add"
             style="@style/ContactPopup.Button"

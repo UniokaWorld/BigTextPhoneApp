@@ -27,6 +27,8 @@
         android:paddingEnd="@dimen/top_dialpad_side_padding">
 
         <!-- Call Button -->
+
+        <!-- Edit Text -->
         <ImageView
             android:id="@+id/button_call"
             android:layout_width="50dp"
@@ -37,7 +39,6 @@
             android:src="@drawable/ic_call_black_24dp"
             android:tint="?attr/colorAccent" />
 
-        <!-- Edit Text -->
         <com.chooloo.www.callmanager.ui.widgets.DigitsEditText
             android:id="@+id/digits_edit_text"
             android:layout_width="0dp"
