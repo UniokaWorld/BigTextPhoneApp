@@ -31,7 +31,7 @@ public class CustomPagerAdapter extends FragmentPagerAdapter {
     private Context mContext;
 
     private List<Class> mClasses = new ArrayList<>(Arrays.asList(RecentsPageFragment.class, ContactsPageFragment.class, CGroupsFragment.class));
-    private List<String> mTitles = new ArrayList<>(Arrays.asList("Recents", "Contacts", "Excel"));
+    private List<String> mTitles = new ArrayList<>(Arrays.asList("履歴", "電話帳", "Excel"));
 
     /**
      * Constructor
