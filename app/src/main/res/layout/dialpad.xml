@@ -16,7 +16,8 @@
 
         <com.chooloo.www.callmanager.ui.widgets.DialpadKeyButton
             android:id="@+id/key_1"
-            style="@style/DialpadKey">
+            style="@style/DialpadKey"
+            android:background="@drawable/bubble_background">
 
             <LinearLayout style="@style/DialpadKeyInnerLayout">
 
@@ -24,8 +25,11 @@
                     android:id="@+id/dialpad_key_number"
                     style="@style/DialpadKeyNumber"
                     android:layout_width="48dp"
-                    android:textSize="50sp"
+                    android:layout_height="60dp"
+                    android:textColor="#000000"
+                    android:textSize="52sp"
                     android:textStyle="bold"
+                    android:translationY="-8dp"
                     tools:text="n" />
 
                 <ImageView

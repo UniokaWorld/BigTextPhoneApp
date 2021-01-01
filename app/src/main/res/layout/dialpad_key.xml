@@ -3,11 +3,10 @@
 <!-- A layout representing a single key in the dialpad -->
 <com.chooloo.www.callmanager.ui.widgets.DialpadKeyButton xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/DialpadKey">
+    style="@style/DialpadKey"
+    android:background="@drawable/bubble_background">
 
-    <LinearLayout
-        style="@style/DialpadKeyInnerLayout"
-        android:background="#FFFFFF">
+    <LinearLayout style="@style/DialpadKeyInnerLayout">
 
         <TextView
             android:id="@+id/dialpad_key_number"
@@ -15,8 +14,9 @@
             android:layout_height="wrap_content"
             android:accessibilityLiveRegion="none"
             android:fontFamily="@font/google_sans_bold"
-            android:textSize="50sp"
-            android:textStyle="bold"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="52sp"
             tools:text="n" />
 
         <TextView
