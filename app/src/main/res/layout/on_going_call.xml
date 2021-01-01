@@ -75,12 +75,14 @@
         <TextView
             android:id="@+id/text_caller"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:maxLines="1"
+            android:layout_height="249dp"
+            android:ellipsize="start"
+            android:maxLines="2"
+            android:textAlignment="center"
             android:textColor="?attr/iconColor"
-            android:textSize="@dimen/caller_name_size"
-            tools:text="Jesus" />
+            android:textSize="100dp"
+            android:textStyle="bold"
+            tools:text="猫宮崎 俊太郎" />
 
         <!-- Call Timer -->
         <TextView
@@ -96,7 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.3" />
+        app:layout_constraintGuide_percent="0.56" />
 
     <!-- Hold Button -->
     <ImageView
